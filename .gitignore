@@ -1,0 +1,4 @@
+dist/
+qa/
+.openai/
+__pycache__/

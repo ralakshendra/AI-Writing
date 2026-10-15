@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="AI Writing is a structured library of digital writing lessons, prompts, courses, visuals, and video resources.">
+  <meta name="theme-color" content="#0b0908">
+  <title>AI Writing | Learn, write, ship</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="AI Writing home"><span class="brand-mark" aria-hidden="true">AW</span><span>AI <b>WRITING</b></span></a>
+    <nav aria-label="Primary navigation"><a href="#pillars">Topics</a><a href="#library">Library</a><a href="#practice">Practice</a></nav>
+    <button class="saved-nav" type="button" data-saved-only aria-pressed="false"><span aria-hidden="true">★</span> Saved <b data-saved-count>0</b></button>
+  </header>
+  <main id="main-content">
+    <section class="hero" id="top">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">THE DIGITAL WRITING LIBRARY</p>
+          <h1>Think clearly.<br>Write boldly.<br><em>Ship often.</em></h1>
+          <p class="hero-lead">A focused home for 335 lessons, prompts, courses, and replays—organized around the exact topics in your writing archive.</p>
+          <div class="hero-actions"><a class="button primary" href="#library">EXPLORE THE LIBRARY <span aria-hidden="true">→</span></a><button class="button ghost" type="button" data-surprise>Pick one for me</button></div>
+          <div class="hero-stats" aria-label="Library summary"><div><strong data-total-count>335</strong><span>Resources</span></div><div><strong data-pillar-count>7</strong><span>Core topics</span></div><div><strong data-media-count>—</strong><span>Visual lessons</span></div></div>
+        </div>
+        <div class="hero-studio" aria-label="Write, refine, and publish">
+          <div class="studio-sheet sheet-back"><span>DRAFT 01</span><p>Ideas become useful when they become clear.</p></div>
+          <div class="studio-sheet sheet-front"><span>THE WRITING LOOP</span><ol><li><b>01</b> Find the idea</li><li><b>02</b> Shape the insight</li><li><b>03</b> Write the draft</li><li><b>04</b> Ship the work</li></ol><i>→</i></div>
+          <span class="type-chip chip-a" aria-hidden="true">Aa</span><span class="type-chip chip-star" aria-hidden="true">✦</span><span class="type-chip chip-cursor" aria-hidden="true">I</span>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#pillars"><span>EXPLORE THE TOPICS</span><i aria-hidden="true"></i></a>
+    </section>
+    <section class="manifesto" aria-labelledby="manifesto-title">
+      <div><p class="eyebrow">ONE LIBRARY · SEVEN DIRECTIONS</p><h2 id="manifesto-title">Everything starts with a <em>stronger sentence.</em></h2></div>
+      <p>Build the mindset, choose a niche, learn the craft, grow with AI, and publish consistently. The archive is now a connected writing system instead of a maze of folders.</p>
+    </section>
+    <section class="pillars" id="pillars" aria-labelledby="pillars-title">
+      <div class="section-head"><div><p class="eyebrow">01 · CORE TOPICS</p><h2 id="pillars-title">Follow the archive.</h2></div><p>Every top-level folder is a core topic. Choose one to see its courses, days, modules, and resources.</p></div>
+      <div class="pillar-grid" data-pillars><div class="empty-state"><strong>Mapping the topics…</strong></div></div>
+    </section>
+    <section class="library" id="library" aria-labelledby="library-title">
+      <div class="library-head"><div><p class="eyebrow">02 · SEARCH &amp; DISCOVER</p><h2 id="library-title">Find your next move.</h2></div><div class="progress" data-progress aria-live="polite"><div><strong>0</strong><span>of 335 explored</span></div><i><b></b></i></div></div>
+      <label class="search"><span class="visually-hidden">Search resources</span><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m16 16 5 5"></path></svg><input type="search" data-search placeholder="Search Ship 30, hooks, newsletters, prompts…" autocomplete="off"><kbd>⌘ K</kbd></label>
+      <div class="filter-panel" data-filter-panel aria-label="Resource filters"></div>
+      <div class="result-meta"><strong data-result-count aria-live="polite">Loading the archive…</strong><span>Original wording, images, videos, and source links preserved</span></div>
+      <div class="resource-grid" data-results><div class="empty-state"><strong>Opening AI Writing…</strong><span>Organizing your resources.</span></div></div>
+      <button class="button ghost load-more" type="button" data-load-more hidden>SHOW MORE RESOURCES</button>
+    </section>
+    <section class="practice" id="practice" aria-labelledby="practice-title">
+      <div class="practice-board" aria-hidden="true"><span>IDEA</span><i></i><span>DRAFT</span><i></i><span>SHIP</span></div>
+      <div><p class="eyebrow">03 · FROM LEARNING TO PRACTICE</p><h2 id="practice-title">Read with a purpose.<br><em>Leave with a draft.</em></h2><p>Save what matters now. Mark what you explore. Return to the exact lesson, image, or video when your next piece needs a clearer idea or a sharper structure.</p><a class="button primary" href="#library">OPEN THE LIBRARY <span aria-hidden="true">→</span></a></div>
+    </section>
+  </main>
+  <footer><div><span class="brand-mark" aria-hidden="true">AW</span><strong>AI WRITING</strong><p>A digital writing library for clearer thinking and consistent publishing.</p></div><p>Built from the supplied AI Writing community archive.</p></footer>
+  <dialog class="reader" data-reader>
+    <div class="reader-shell">
+      <header><div><span data-reader-path>AI WRITING</span><strong data-reader-collection>Imported library</strong></div><button type="button" data-reader-close aria-label="Close resource">×</button></header>
+      <article><p class="eyebrow">AI WRITING · RESOURCE</p><h2 data-reader-title>Resource</h2><div class="reader-videos" data-reader-videos hidden></div><div class="reader-body" data-reader-body></div></article>
+      <div class="reader-actions"><button class="button primary" type="button" data-reader-complete>MARK AS EXPLORED</button><a class="button ghost" data-reader-source target="_blank" rel="noopener noreferrer">VIEW ORIGINAL SOURCE</a><button class="button ghost" type="button" data-reader-close>CLOSE</button></div>
+    </div>
+  </dialog>
+</body>
+</html>

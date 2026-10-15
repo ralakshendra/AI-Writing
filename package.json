@@ -1,0 +1,10 @@
+{
+  "name": "ai-writing",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "preview": "python -m http.server 8777",
+    "check": "node scripts/check-site.mjs",
+    "archive:import": "python scripts/import_library.py \"C:/Users/ralak/Downloads/AI Community Writing-20261015T190309Z-1-001.zip\" data/library.json"
+  }
+}
