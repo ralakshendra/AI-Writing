@@ -6,7 +6,8 @@ A standalone, GitHub-ready digital writing library built from the supplied AI Co
 
 - All 335 archived resources, organized by their original top-level folders.
 - Search, topic/folder/format filters, saved resources, and local progress tracking.
-- Readable lesson content inside the site.
+- Readable lesson content in a spacious, full-page view that opens in a new tab.
+- Entire resource tiles are clickable, with a prominent open-resource action.
 - Lesson images extracted from the archived snapshots and stored locally.
 - YouTube and Loom lesson links with preserved thumbnails when available.
 - Responsive layouts for phone, tablet, and desktop.

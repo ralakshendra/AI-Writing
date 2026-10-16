@@ -1,10 +1,12 @@
 import fs from 'node:fs';
-const required=['index.html','styles.css','app.js','data/library.json','.nojekyll'];
+const required=['index.html','resource.html','styles.css','app.js','resource.js','data/library.json','.nojekyll'];
 const missing=required.filter(file=>!fs.existsSync(file));
 const html=fs.readFileSync('index.html','utf8');
 const data=JSON.parse(fs.readFileSync('data/library.json','utf8'));
 const errors=[...missing.map(file=>`Missing ${file}`)];
-for(const token of ['AI WRITING','Ship 30','Skip to main content','id="main-content"','data-pillars','data-reader-videos'])if(!html.includes(token))errors.push(`Missing site text: ${token}`);
+for(const token of ['AI WRITING','Ship 30','Skip to main content','id="main-content"','data-pillars'])if(!html.includes(token))errors.push(`Missing site text: ${token}`);
+const resourceHtml=fs.readFileSync('resource.html','utf8');
+for(const token of ['data-resource-document','data-resource-body','data-resource-source','Back to library'])if(!resourceHtml.includes(token))errors.push(`Missing resource page element: ${token}`);
 for(const banned of ['BUILD MY AI MOVIE STUDIO','Alexx Roy','AI FilmCraft','build-my-ai-movie-mark.svg','alexx-portrait.webp'])if(html.includes(banned))errors.push(`Old branding remains: ${banned}`);
 if(data.count!==data.records.length)errors.push('Library count does not match records');
 if(new Set(data.records.map(item=>item.id)).size!==data.records.length)errors.push('Duplicate resource IDs');
