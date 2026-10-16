@@ -4,8 +4,8 @@ A standalone, GitHub-ready digital writing library built from the supplied AI Co
 
 ## What is included
 
-- All 335 archived resources, organized by their original top-level folders.
-- Search, topic/folder/format filters, saved resources, and local progress tracking.
+- All 341 archived source pages, including both MHTML and saved HTML resources.
+- Exact folder and subfolder navigation with breadcrumbs, global search, saved resources, and local progress tracking.
 - Readable lesson content in a spacious, full-page view that opens in a new tab.
 - Entire resource tiles are clickable, with a prominent open-resource action.
 - Lesson images extracted from the archived snapshots and stored locally.

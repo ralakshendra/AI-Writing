@@ -5,6 +5,8 @@ from __future__ import annotations
 import hashlib
 import html
 import json
+import mimetypes
+import posixpath
 import re
 import sys
 from email import policy
@@ -56,6 +58,20 @@ class MediaStore:
         return relative
 
 
+class ArchivePart:
+    """Small adapter that lets saved-HTML assets use the MHTML media pipeline."""
+
+    def __init__(self, payload: bytes, content_type: str) -> None:
+        self.payload = payload
+        self.content_type = content_type
+
+    def get_payload(self, decode=True):
+        return self.payload
+
+    def get_content_type(self):
+        return self.content_type
+
+
 class LessonExtractor(HTMLParser):
     def __init__(self, image_parts: dict[str, object], media: MediaStore) -> None:
         super().__init__(convert_charrefs=True)
@@ -81,7 +97,7 @@ class LessonExtractor(HTMLParser):
         rendered = ""
         if tag == "a" and safe_url(values.get("href") or ""):
             rendered = f' href="{html.escape(values["href"], quote=True)}" target="_blank" rel="noopener noreferrer"'
-        elif tag == "img" and safe_url(values.get("src") or ""):
+        elif tag == "img" and (safe_url(values.get("src") or "") or values.get("src") in self.image_parts):
             original = values["src"]
             source = self.media.preserve(original, self.image_parts.get(original))
             alt = clean(values.get("alt") or values.get("title") or "Lesson image")
@@ -115,7 +131,7 @@ class LessonExtractor(HTMLParser):
 class MetaExtractor(HTMLParser):
     def __init__(self) -> None:
         super().__init__(convert_charrefs=True)
-        self.title, self.description, self.image, self.in_title = "", "", "", False
+        self.title, self.description, self.image, self.canonical, self.in_title = "", "", "", "", False
 
     def handle_starttag(self, tag, attrs):
         values = dict(attrs)
@@ -127,6 +143,10 @@ class MetaExtractor(HTMLParser):
                 self.description = value
             if key == "og:image" and safe_url(value):
                 self.image = value
+            if key == "og:url" and safe_url(value):
+                self.canonical = value
+        if tag == "link" and "canonical" in (values.get("rel") or "").lower() and safe_url(values.get("href") or ""):
+            self.canonical = values["href"]
 
     def handle_endtag(self, tag):
         if tag == "title":
@@ -161,6 +181,25 @@ def parse_mhtml(raw: bytes):
     return "", source, parts
 
 
+def parse_html(name: str, raw: bytes, archive: ZipFile):
+    page = raw.decode("utf-8", "replace")
+    meta = MetaExtractor()
+    meta.feed(page)
+    current_page = re.search(r'https://www\.skool\.com/[^"\'<>\\ ]+/classroom/[^"\'<>\\ ]+\?md=[a-f0-9]+', page, re.I)
+    image_parts: dict[str, object] = {}
+    for source in re.findall(r'<img[^>]+src=["\']([^"\']+)', page, re.I):
+        if safe_url(source) or source.startswith("data:"):
+            continue
+        candidate = posixpath.normpath(posixpath.join(posixpath.dirname(name), source.replace("\\", "/")))
+        try:
+            payload = archive.read(candidate)
+        except KeyError:
+            continue
+        content_type = mimetypes.guess_type(candidate)[0] or "image/jpeg"
+        image_parts[source] = ArchivePart(payload, content_type)
+    return page, (current_page.group(0) if current_page else meta.canonical), [], image_parts
+
+
 def video_links(meta: MetaExtractor, parts, image_parts: dict[str, object], media: MediaStore):
     videos: list[dict[str, str]] = []
     seen: set[str] = set()
@@ -183,25 +222,33 @@ def video_links(meta: MetaExtractor, parts, image_parts: dict[str, object], medi
     return videos
 
 
-def build_record(name: str, raw: bytes, index: int, media: MediaStore):
-    page, source, parts = parse_mhtml(raw)
+def build_record(name: str, raw: bytes, index: int, media: MediaStore, archive: ZipFile):
+    if name.lower().endswith(".mhtml"):
+        page, source, parts = parse_mhtml(raw)
+        supplied_image_parts = None
+    else:
+        page, source, parts, supplied_image_parts = parse_html(name, raw, archive)
     if not page:
         return None
-    image_parts = {clean(str(part.get("Content-Location", ""))): part for part in parts if part.get_content_type().startswith("image/")}
+    image_parts = supplied_image_parts or {clean(str(part.get("Content-Location", ""))): part for part in parts if part.get_content_type().startswith("image/")}
     meta = MetaExtractor()
     meta.feed(page)
     lesson = LessonExtractor(image_parts, media)
     lesson.feed(page)
     path = PurePosixPath(name)
     pieces = path.parts
-    course = pieces[2] if len(pieces) > 2 else "AI Writing Library"
-    collection = pieces[3] if len(pieces) > 4 else course
-    title = title_from(meta.title or path.stem)
+    folders = [clean(piece) for piece in pieces[2:-1]]
+    course = folders[0] if folders else "AI Writing Library"
+    collection = folders[1] if len(folders) > 1 else course
+    # Saved HTML pages occasionally contain stale metadata from the page viewed
+    # immediately before saving. The supplied filename is the authoritative label.
+    title = title_from(path.stem if name.lower().endswith(".html") else (meta.title or path.stem))
     content = max(lesson.blocks, key=len, default="")
     plain = clean(re.sub(r"<[^>]+>", " ", html.unescape(content)))
     videos = video_links(meta, parts, image_parts, media)
     return {
         "id": f"writing-{index:03d}", "title": title, "course": clean(course), "collection": clean(collection),
+        "folders": folders, "archivePath": name,
         "kind": kind_from(title), "description": clean(meta.description) or plain[:260],
         "source": source if safe_url(source) else "", "content": content, "hasContent": bool(content),
         "images": lesson.images, "videos": videos,
@@ -220,13 +267,32 @@ def main() -> int:
             existing.unlink()
     media = MediaStore(media_directory)
     with ZipFile(archive_path) as archive:
-        names = sorted(name for name in archive.namelist() if name.lower().endswith(".mhtml") and "_files/" not in name)
-        records = [record for index, name in enumerate(names, 1) if (record := build_record(name, archive.read(name), index, media))]
+        mhtml_names = sorted(name for name in archive.namelist() if name.lower().endswith(".mhtml") and "_files/" not in name.lower())
+        html_names = sorted(name for name in archive.namelist() if name.lower().endswith(".html") and "_files/" not in name.lower())
+        names = mhtml_names + html_names
+        records = [record for index, name in enumerate(names, 1) if (record := build_record(name, archive.read(name), index, media, archive))]
     pillars = []
     for course in dict.fromkeys(item["course"] for item in records):
         items = [item for item in records if item["course"] == course]
         pillars.append({"name": course, "count": len(items), "collections": len(set(item["collection"] for item in items))})
-    payload = {"title": "AI Writing", "generated": "2026-10-16", "source": "AI Writing community archive supplied by the site owner on 15 October 2026.", "count": len(records), "pillars": pillars, "records": records}
+    folder_index = []
+    paths = []
+    for item in records:
+        for depth in range(1, len(item["folders"]) + 1):
+            prefix = item["folders"][:depth]
+            if prefix not in paths:
+                paths.append(prefix)
+    for prefix in paths:
+        descendants = [item for item in records if item["folders"][:len(prefix)] == prefix]
+        direct = [item for item in descendants if len(item["folders"]) == len(prefix)]
+        children = {item["folders"][len(prefix)] for item in descendants if len(item["folders"]) > len(prefix)}
+        folder_index.append({"path": prefix, "name": prefix[-1], "count": len(descendants), "directCount": len(direct), "childCount": len(children)})
+    payload = {
+        "title": "AI Writing", "rootName": "AI Writing Community", "generated": "2026-10-16",
+        "source": "AI Writing community archive supplied by the site owner on 15 October 2026.",
+        "count": len(records), "archiveAudit": {"sourcePages": len(names), "importedPages": len(records), "missingPages": len(names) - len(records), "mhtmlPages": len(mhtml_names), "htmlPages": len(html_names)},
+        "pillars": pillars, "folderIndex": folder_index, "records": records,
+    }
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(json.dumps(payload, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     print(json.dumps({"records": len(records), "withContent": sum(1 for item in records if item["hasContent"]), "withImages": sum(1 for item in records if item["images"]), "withVideos": sum(1 for item in records if item["videos"]), "localMedia": media.local_count, "remoteFallbacks": media.remote_count, "output": str(output_path)}))
