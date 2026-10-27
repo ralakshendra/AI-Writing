@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="784.8pt" height="496.8pt" viewBox="0 0 784.8 496.8" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 496.8 
+L 784.8 496.8 
+L 784.8 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 187.893818 201.288421 
+L 367.186909 201.288421 
+Q 374.190545 201.288421 374.190545 195.646316 
+L 374.190545 132.454737 
+Q 374.190545 126.812632 367.186909 126.812632 
+L 187.893818 126.812632 
+Q 180.890182 126.812632 180.890182 132.454737 
+L 180.890182 195.646316 
+Q 180.890182 201.288421 187.893818 201.288421 
+z
+" clip-path="url(#p25395c6f52)" style="fill: #eaf0ff"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 187.893818 281.406316 
+L 367.186909 281.406316 
+Q 374.190545 281.406316 374.190545 275.764211 
+L 374.190545 212.572632 
+Q 374.190545 206.930526 367.186909 206.930526 
+L 187.893818 206.930526 
+Q 180.890182 206.930526 180.890182 212.572632 
+L 180.890182 275.764211 
+Q 180.890182 281.406316 187.893818 281.406316 
+z
+" clip-path="url(#p25395c6f52)" style="fill: #eaf0ff"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 187.893818 361.524211 
+L 367.186909 361.524211 
+Q 374.190545 361.524211 374.190545 355.882105 
+L 374.190545 292.690526 
+Q 374.190545 287.048421 367.186909 287.048421 
+L 187.893818 287.048421 
+Q 180.890182 287.048421 180.890182 292.690526 
+L 180.890182 355.882105 
+Q 180.890182 361.524211 187.893818 361.524211 
+z
+" clip-path="url(#p25395c6f52)" style="fill: #eaf0ff"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 187.893818 441.642105 
+L 367.186909 441.642105 
+Q 374.190545 441.642105 374.190545 436 
+L 374.190545 372.808421 
+Q 374.190545 367.166316 367.186909 367.166316 
+L 187.893818 367.166316 
+Q 180.890182 367.166316 180.890182 372.808421 
+L 180.890182 436 
+Q 180.890182 441.642105 187.893818 441.642105 
+z
+" clip-path="url(#p25395c6f52)" style="fill: #eaf0ff"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 388.197818 201.288421 
+L 567.490909 201.288421 
+Q 574.494545 201.288421 574.494545 195.646316 
+L 574.494545 132.454737 
+Q 574.494545 126.812632 567.490909 126.812632 
+L 388.197818 126.812632 
+Q 381.194182 126.812632 381.194182 132.454737 
+L 381.194182 195.646316 
+Q 381.194182 201.288421 388.197818 201.288421 
+z
+" clip-path="url(#p25395c6f52)" style="fill: #e7f6f3"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 388.197818 281.406316 
+L 567.490909 281.406316 
+Q 574.494545 281.406316 574.494545 275.764211 
+L 574.494545 212.572632 
+Q 574.494545 206.930526 567.490909 206.930526 
+L 388.197818 206.930526 
+Q 381.194182 206.930526 381.194182 212.572632 
+L 381.194182 275.764211 
+Q 381.194182 281.406316 388.197818 281.406316 
+z
+" clip-path="url(#p25395c6f52)" style="fill: #e7f6f3"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 388.197818 361.524211 
+L 567.490909 361.524211 
+Q 574.494545 361.524211 574.494545 355.882105 
+L 574.494545 292.690526 
+Q 574.494545 287.048421 567.490909 287.048421 
+L 388.197818 287.048421 
+Q 381.194182 287.048421 381.194182 292.690526 
+L 381.194182 355.882105 
+Q 381.194182 361.524211 388.197818 361.524211 
+z
+" clip-path="url(#p25395c6f52)" style="fill: #e7f6f3"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 388.197818 441.642105 
+L 567.490909 441.642105 
+Q 574.494545 441.642105 574.494545 436 
+L 574.494545 372.808421 
+Q 574.494545 367.166316 567.490909 367.166316 
+L 388.197818 367.166316 
+Q 381.194182 367.166316 381.194182 372.808421 
+L 381.194182 436 
+Q 381.194182 441.642105 388.197818 441.642105 
+z
+" clip-path="url(#p25395c6f52)" style="fill: #e7f6f3"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 588.501818 201.288421 
+L 767.794909 201.288421 
+Q 774.798545 201.288421 774.798545 195.646316 
+L 774.798545 132.454737 
+Q 774.798545 126.812632 767.794909 126.812632 
+L 588.501818 126.812632 
+Q 581.498182 126.812632 581.498182 132.454737 
+L 581.498182 195.646316 
+Q 581.498182 201.288421 588.501818 201.288421 
+z
+" clip-path="url(#p25395c6f52)" style="fill: #fff0e7"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 588.501818 281.406316 
+L 767.794909 281.406316 
+Q 774.798545 281.406316 774.798545 275.764211 
+L 774.798545 212.572632 
+Q 774.798545 206.930526 767.794909 206.930526 
+L 588.501818 206.930526 
+Q 581.498182 206.930526 581.498182 212.572632 
+L 581.498182 275.764211 
+Q 581.498182 281.406316 588.501818 281.406316 
+z
+" clip-path="url(#p25395c6f52)" style="fill: #fff0e7"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 588.501818 361.524211 
+L 767.794909 361.524211 
+Q 774.798545 361.524211 774.798545 355.882105 
+L 774.798545 292.690526 
+Q 774.798545 287.048421 767.794909 287.048421 
+L 588.501818 287.048421 
+Q 581.498182 287.048421 581.498182 292.690526 
+L 581.498182 355.882105 
+Q 581.498182 361.524211 588.501818 361.524211 
+z
+" clip-path="url(#p25395c6f52)" style="fill: #fff0e7"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 588.501818 441.642105 
+L 767.794909 441.642105 
+Q 774.798545 441.642105 774.798545 436 
+L 774.798545 372.808421 
+Q 774.798545 367.166316 767.794909 367.166316 
+L 588.501818 367.166316 
+Q 581.498182 367.166316 581.498182 372.808421 
+L 581.498182 436 
+Q 581.498182 441.642105 588.501818 441.642105 
+z
+" clip-path="url(#p25395c6f52)" style="fill: #fff0e7"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 20px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: start; fill: #222222" x="17.705455" y="32.387993" transform="rotate(-0 17.705455 32.387993)">3 Ways Your Newsletter Pays You (No Ads Required)</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: end; fill: #666666" x="164.781818" y="167.361776" transform="rotate(-0 164.781818 167.361776)">REVENUE TYPE</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: end; fill: #666666" x="164.781818" y="247.479671" transform="rotate(-0 164.781818 247.479671)">EFFORT TO START</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: end; fill: #666666" x="164.781818" y="327.597566" transform="rotate(-0 164.781818 327.597566)">BEST WHEN</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: end; fill: #666666" x="164.781818" y="407.715461" transform="rotate(-0 164.781818 407.715461)">PRICE POINT</text>
+   </g>
+   <g id="patch_14">
+    <path d="M 189.294545 121.170526 
+L 365.786182 121.170526 
+Q 374.190545 121.170526 374.190545 114.4 
+L 374.190545 72.084211 
+Q 374.190545 65.313684 365.786182 65.313684 
+L 189.294545 65.313684 
+Q 180.890182 65.313684 180.890182 72.084211 
+L 180.890182 114.4 
+Q 180.890182 121.170526 189.294545 121.170526 
+z
+" clip-path="url(#p25395c6f52)" style="fill: #2d6bff; stroke: #2d6bff; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 389.598545 121.170526 
+L 566.090182 121.170526 
+Q 574.494545 121.170526 574.494545 114.4 
+L 574.494545 72.084211 
+Q 574.494545 65.313684 566.090182 65.313684 
+L 389.598545 65.313684 
+Q 381.194182 65.313684 381.194182 72.084211 
+L 381.194182 114.4 
+Q 381.194182 121.170526 389.598545 121.170526 
+z
+" clip-path="url(#p25395c6f52)" style="fill: #12a594; stroke: #12a594; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 589.902545 121.170526 
+L 766.394182 121.170526 
+Q 774.798545 121.170526 774.798545 114.4 
+L 774.798545 72.084211 
+Q 774.798545 65.313684 766.394182 65.313684 
+L 589.902545 65.313684 
+Q 581.498182 65.313684 581.498182 72.084211 
+L 581.498182 114.4 
+Q 581.498182 121.170526 589.902545 121.170526 
+z
+" clip-path="url(#p25395c6f52)" style="fill: #ff6719; stroke: #ff6719; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_6">
+    <text style="font-style: italic; font-size: 12.5px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: start; fill: #555555" x="17.705455" y="467.031579" transform="rotate(-0 17.705455 467.031579)">Stack them: most creators start with one, then layer the other two on the same list.</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 14.5px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: middle; fill: #ffffff" x="277.540364" y="97.243199" transform="rotate(-0 277.540364 97.243199)">Paid Newsletter</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: middle; fill: #222222" x="277.540364" y="167.722948" transform="rotate(-0 277.540364 167.722948)">Recurring</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: middle; fill: #222222" x="277.540364" y="247.893577" transform="rotate(-0 277.540364 247.893577)">Low</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: middle; fill: #222222" x="277.540364" y="327.958738" transform="rotate(-0 277.540364 327.958738)">500+ engaged subs</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: middle; fill: #222222" x="277.540364" y="408.129367" transform="rotate(-0 277.540364 408.129367)">$5–$15 / mo</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 14.5px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: middle; fill: #ffffff" x="477.844364" y="97.243199" transform="rotate(-0 477.844364 97.243199)">Books</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: middle; fill: #222222" x="477.844364" y="167.722948" transform="rotate(-0 477.844364 167.722948)">Royalties</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: middle; fill: #222222" x="477.844364" y="247.893577" transform="rotate(-0 477.844364 247.893577)">Medium</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: middle; fill: #222222" x="477.844364" y="327.958738" transform="rotate(-0 477.844364 327.958738)">15+ long-form issues</text>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: middle; fill: #222222" x="477.844364" y="408.129367" transform="rotate(-0 477.844364 408.129367)">$9–$25</text>
+   </g>
+   <g id="text_17">
+    <text style="font-weight: 700; font-size: 14.5px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: middle; fill: #ffffff" x="678.148364" y="97.186558" transform="rotate(-0 678.148364 97.186558)">Digital Products</text>
+   </g>
+   <g id="text_18">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: middle; fill: #222222" x="678.148364" y="167.775683" transform="rotate(-0 678.148364 167.775683)">One-off</text>
+   </g>
+   <g id="text_19">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: middle; fill: #222222" x="678.148364" y="247.893577" transform="rotate(-0 678.148364 247.893577)">A weekend</text>
+   </g>
+   <g id="text_20">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: middle; fill: #222222" x="678.148364" y="327.958738" transform="rotate(-0 678.148364 327.958738)">Any list size</text>
+   </g>
+   <g id="text_21">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: middle; fill: #222222" x="678.148364" y="408.129367" transform="rotate(-0 678.148364 408.129367)">$9–$1,000</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p25395c6f52">
+   <rect x="7.2" y="7.2" width="770.4" height="482.4"/>
+  </clipPath>
+ </defs>
+</svg>

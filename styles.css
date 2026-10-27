@@ -26,3 +26,14 @@
 @media(max-width:980px){.folder-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.directory-bar{grid-template-columns:auto 1fr}.directory-bar>span{grid-column:1/-1}}
 @media(max-width:720px){.directory-bar{grid-template-columns:1fr;gap:12px}.folder-up{justify-self:start}.directory-bar>span{grid-column:auto;white-space:normal}.folder-grid{grid-template-columns:1fr}.folder-card{min-height:116px}.breadcrumbs{padding:3px 0}.result-meta>span{line-height:1.5}}
 @media(prefers-reduced-motion:reduce){.folder-card{transition:none}}
+
+/* Lesson downloads use original Drive file URLs, never expiring download tokens. */
+.resource-downloads{margin:2rem clamp(1rem,5vw,6.5rem);padding:clamp(1rem,3vw,2rem);border:1px solid var(--accent,#f47b35);border-radius:16px;background:rgba(244,123,53,.06)}
+.resource-downloads[hidden]{display:none}
+.resource-downloads h2{margin:0 0 .75rem;font-size:1.4rem}
+.resource-downloads p{line-height:1.7;margin:0 0 1rem}
+.resource-downloads ul{list-style:none;margin:0;padding:0;display:grid;gap:.75rem}
+.resource-downloads a{display:grid;gap:.5rem;padding:1rem;border:1px solid currentColor;border-radius:10px;color:inherit;text-decoration:none;overflow-wrap:anywhere}
+.resource-downloads a:hover,.resource-downloads a:focus-visible{background:rgba(244,123,53,.12);outline:2px solid var(--accent,#f47b35);outline-offset:3px}
+.resource-downloads a span{font-size:.72rem;letter-spacing:.06em}
+.resource-downloads details{margin-top:1rem}.resource-downloads summary{cursor:pointer;padding:.5rem 0}

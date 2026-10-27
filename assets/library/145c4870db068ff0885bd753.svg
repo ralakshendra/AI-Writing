@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="712.8pt" height="439.2pt" viewBox="0 0 712.8 439.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 439.2 
+L 712.8 439.2 
+L 712.8 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 67.321563 390.804688 
+L 684.605625 390.804688 
+L 684.605625 37.637031 
+L 67.321563 37.637031 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m9dac5c3c2f" d="M 0 0 
+L 0 3.5 
+" style="stroke: #555555; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m9dac5c3c2f" x="67.321563" y="390.804688" style="fill: #555555; stroke: #555555; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 12px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: middle; fill: #555555" x="67.321563" y="406.922812" transform="rotate(-0 67.321563 406.922812)">$0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m9dac5c3c2f" x="170.20224" y="390.804688" style="fill: #555555; stroke: #555555; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 12px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: middle; fill: #555555" x="170.20224" y="406.922812" transform="rotate(-0 170.20224 406.922812)">$500</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#m9dac5c3c2f" x="273.082917" y="390.804688" style="fill: #555555; stroke: #555555; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 12px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: middle; fill: #555555" x="273.082917" y="406.922812" transform="rotate(-0 273.082917 406.922812)">$1,000</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m9dac5c3c2f" x="375.963594" y="390.804688" style="fill: #555555; stroke: #555555; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 12px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: middle; fill: #555555" x="375.963594" y="406.922812" transform="rotate(-0 375.963594 406.922812)">$1,500</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#m9dac5c3c2f" x="478.844271" y="390.804688" style="fill: #555555; stroke: #555555; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 12px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: middle; fill: #555555" x="478.844271" y="406.922812" transform="rotate(-0 478.844271 406.922812)">$2,000</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m9dac5c3c2f" x="581.724948" y="390.804688" style="fill: #555555; stroke: #555555; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 12px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: middle; fill: #555555" x="581.724948" y="406.922812" transform="rotate(-0 581.724948 406.922812)">$2,500</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_7">
+      <g>
+       <use xlink:href="#m9dac5c3c2f" x="684.605625" y="390.804688" style="fill: #555555; stroke: #555555; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 12px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: middle; fill: #555555" x="684.605625" y="406.922812" transform="rotate(-0 684.605625 406.922812)">$3,000</text>
+     </g>
+    </g>
+    <g id="text_8">
+     <text style="font-size: 13px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: middle; fill: #222222" x="375.963594" y="429.296406" transform="rotate(-0 375.963594 429.296406)">Monthly paid-subscription revenue</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_8">
+      <path d="M 67.321563 390.804688 
+L 684.605625 390.804688 
+" clip-path="url(#p8a1c85bed2)" style="fill: none; stroke: #eeeeee; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_9">
+      <defs>
+       <path id="mf24038199a" d="M 0 0 
+L -3.5 0 
+" style="stroke: #555555; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#mf24038199a" x="67.321563" y="390.804688" style="fill: #555555; stroke: #555555; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 12px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: end; fill: #555555" x="60.321563" y="395.36375" transform="rotate(-0 60.321563 395.36375)">$0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_10">
+      <path d="M 67.321563 306.71715 
+L 684.605625 306.71715 
+" clip-path="url(#p8a1c85bed2)" style="fill: none; stroke: #eeeeee; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_11">
+      <g>
+       <use xlink:href="#mf24038199a" x="67.321563" y="306.71715" style="fill: #555555; stroke: #555555; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 12px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: end; fill: #555555" x="60.321563" y="311.276213" transform="rotate(-0 60.321563 311.276213)">$100</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_12">
+      <path d="M 67.321563 222.629613 
+L 684.605625 222.629613 
+" clip-path="url(#p8a1c85bed2)" style="fill: none; stroke: #eeeeee; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_13">
+      <g>
+       <use xlink:href="#mf24038199a" x="67.321563" y="222.629613" style="fill: #555555; stroke: #555555; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-size: 12px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: end; fill: #555555" x="60.321563" y="227.188676" transform="rotate(-0 60.321563 227.188676)">$200</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_14">
+      <path d="M 67.321563 138.542076 
+L 684.605625 138.542076 
+" clip-path="url(#p8a1c85bed2)" style="fill: none; stroke: #eeeeee; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_15">
+      <g>
+       <use xlink:href="#mf24038199a" x="67.321563" y="138.542076" style="fill: #555555; stroke: #555555; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <text style="font-size: 12px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: end; fill: #555555" x="60.321563" y="143.101138" transform="rotate(-0 60.321563 143.101138)">$300</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_16">
+      <path d="M 67.321563 54.454539 
+L 684.605625 54.454539 
+" clip-path="url(#p8a1c85bed2)" style="fill: none; stroke: #eeeeee; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_17">
+      <g>
+       <use xlink:href="#mf24038199a" x="67.321563" y="54.454539" style="fill: #555555; stroke: #555555; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <text style="font-size: 12px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: end; fill: #555555" x="60.321563" y="59.013601" transform="rotate(-0 60.321563 59.013601)">$400</text>
+     </g>
+    </g>
+    <g id="text_14">
+     <text style="font-size: 13px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: middle; fill: #222222" x="17.077969" y="214.220859" transform="rotate(-90 17.077969 214.220859)">What you pay the platform per month</text>
+    </g>
+   </g>
+   <g id="FillBetweenPolyCollection_1">
+    <defs>
+     <path id="m7bd9b9dbbc" d="M 188.720761 -112.890454 
+L 188.720761 -112.890454 
+L 273.082917 -123.233221 
+L 375.963594 -135.846351 
+L 478.844271 -148.459482 
+L 581.724948 -161.072612 
+L 684.605625 -173.685743 
+L 684.605625 -376.336708 
+L 581.724948 -321.679808 
+L 478.844271 -267.022909 
+L 375.963594 -212.36601 
+L 273.082917 -157.709111 
+L 188.720761 -112.890454 
+z
+"/>
+    </defs>
+    <g clip-path="url(#p8a1c85bed2)">
+     <use xlink:href="#m7bd9b9dbbc" x="0" y="439.2" style="fill: #ff6719; fill-opacity: 0.1"/>
+    </g>
+   </g>
+   <g id="line2d_18">
+    <path d="M 67.321563 390.804688 
+L 684.605625 62.863292 
+L 684.605625 62.863292 
+" clip-path="url(#p8a1c85bed2)" style="fill: none; stroke: #ff6719; stroke-width: 3.5; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_19">
+    <path d="M 67.321563 349.601794 
+L 684.605625 273.923011 
+L 684.605625 273.923011 
+" clip-path="url(#p8a1c85bed2)" style="fill: none; stroke: #2d6bff; stroke-width: 3.5; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_20">
+    <path d="M 67.321563 341.193041 
+L 684.605625 265.514257 
+L 684.605625 265.514257 
+" clip-path="url(#p8a1c85bed2)" style="fill: none; stroke: #12a594; stroke-width: 3.5; stroke-linecap: square"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 67.321563 390.804688 
+L 67.321563 37.637031 
+" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 67.321563 390.804688 
+L 684.605625 390.804688 
+" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 163.246175 144.932984 
+Q 165.66995 240.087797 168.093725 335.242609 
+" style="fill: none; stroke: #999999; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 11.5px; font-family: 'Helvetica Neue', 'Arial', sans-serif; fill: #222222" transform="translate(92.012925 125.664592)">~$490/mo revenue:</text>
+    <text style="font-size: 11.5px; font-family: 'Helvetica Neue', 'Arial', sans-serif; fill: #222222" transform="translate(92.012925 138.542076)">Substack passes Beehiiv</text>
+   </g>
+   <g id="patch_6">
+    <path d="M 223.863515 334.015021 
+Q 207.268087 330.376272 190.67266 326.737524 
+" style="fill: none; stroke: #999999; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 11.5px; font-family: 'Helvetica Neue', 'Arial', sans-serif; fill: #222222" transform="translate(227.815419 344.292188)">~$590/mo revenue:</text>
+    <text style="font-size: 11.5px; font-family: 'Helvetica Neue', 'Arial', sans-serif; fill: #222222" transform="translate(227.815419 357.169673)">Substack passes Kit</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 490.781368 240.057308 
+Q 510.150229 193.375483 528.876386 148.242668 
+" style="fill: none; stroke: #ff6719; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 524.651087 151.902838 
+L 528.876386 148.242668 
+L 529.269343 153.819009 
+" style="fill: none; stroke: #ff6719; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_17">
+    <text style="font-weight: 700; font-size: 12.5px; font-family: 'Helvetica Neue', 'Arial', sans-serif; fill: #ff6719" transform="translate(375.963594 253.398702)">Above the crossover,</text>
+    <text style="font-weight: 700; font-size: 12.5px; font-family: 'Helvetica Neue', 'Arial', sans-serif; fill: #ff6719" transform="translate(375.963594 267.395967)">Substack's cut keeps growing</text>
+    <text style="font-weight: 700; font-size: 12.5px; font-family: 'Helvetica Neue', 'Arial', sans-serif; fill: #ff6719" transform="translate(375.963594 281.490889)">with your revenue</text>
+   </g>
+   <g id="text_18">
+    <text style="font-weight: 700; font-size: 19px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: start; fill: #222222" x="67.321563" y="21.637031" transform="rotate(-0 67.321563 21.637031)">When Substack's 10% Starts To Cost You</text>
+   </g>
+   <g id="line2d_21">
+    <defs>
+     <path id="m46b4cda634" d="M 0 4.5 
+C 1.193414 4.5 2.338109 4.025852 3.181981 3.181981 
+C 4.025852 2.338109 4.5 1.193414 4.5 0 
+C 4.5 -1.193414 4.025852 -2.338109 3.181981 -3.181981 
+C 2.338109 -4.025852 1.193414 -4.5 0 -4.5 
+C -1.193414 -4.5 -2.338109 -4.025852 -3.181981 -3.181981 
+C -4.025852 -2.338109 -4.5 -1.193414 -4.5 0 
+C -4.5 1.193414 -4.025852 2.338109 -3.181981 3.181981 
+C -2.338109 4.025852 -1.193414 4.5 0 4.5 
+z
+" style="stroke: #2d6bff"/>
+    </defs>
+    <g clip-path="url(#p8a1c85bed2)">
+     <use xlink:href="#m46b4cda634" x="168.144626" y="337.240926" style="fill: #2d6bff; stroke: #2d6bff"/>
+    </g>
+   </g>
+   <g id="line2d_22">
+    <defs>
+     <path id="ma62f30d3f8" d="M 0 4.5 
+C 1.193414 4.5 2.338109 4.025852 3.181981 3.181981 
+C 4.025852 2.338109 4.5 1.193414 4.5 0 
+C 4.5 -1.193414 4.025852 -2.338109 3.181981 -3.181981 
+C 2.338109 -4.025852 1.193414 -4.5 0 -4.5 
+C -1.193414 -4.5 -2.338109 -4.025852 -3.181981 -3.181981 
+C -4.025852 -2.338109 -4.5 -1.193414 -4.5 0 
+C -4.5 1.193414 -4.025852 2.338109 -3.181981 3.181981 
+C -2.338109 4.025852 -1.193414 4.5 0 4.5 
+z
+" style="stroke: #12a594"/>
+    </defs>
+    <g clip-path="url(#p8a1c85bed2)">
+     <use xlink:href="#ma62f30d3f8" x="188.720761" y="326.309546" style="fill: #12a594; stroke: #12a594"/>
+    </g>
+   </g>
+   <g id="legend_1">
+    <g id="line2d_23">
+     <path d="M 83.844403 56.231911 
+L 95.344403 56.231911 
+L 106.844403 56.231911 
+" style="fill: none; stroke: #ff6719; stroke-width: 3.5; stroke-linecap: square"/>
+    </g>
+    <g id="text_19">
+     <text style="font-size: 11.5px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: start; fill: #222222" x="116.044403" y="60.256911" transform="rotate(-0 116.044403 60.256911)">Substack (10% + ~3% Stripe)</text>
+    </g>
+    <g id="line2d_24">
+     <path d="M 83.844403 73.111755 
+L 95.344403 73.111755 
+L 106.844403 73.111755 
+" style="fill: none; stroke: #2d6bff; stroke-width: 3.5; stroke-linecap: square"/>
+    </g>
+    <g id="text_20">
+     <text style="font-size: 11.5px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: start; fill: #222222" x="116.044403" y="77.136755" transform="rotate(-0 116.044403 77.136755)">Beehiiv Scale ($49/mo + ~3% Stripe)</text>
+    </g>
+    <g id="line2d_25">
+     <path d="M 83.844403 89.991598 
+L 95.344403 89.991598 
+L 106.844403 89.991598 
+" style="fill: none; stroke: #12a594; stroke-width: 3.5; stroke-linecap: square"/>
+    </g>
+    <g id="text_21">
+     <text style="font-size: 11.5px; font-family: 'Helvetica Neue', 'Arial', sans-serif; text-anchor: start; fill: #222222" x="116.044403" y="94.016598" transform="rotate(-0 116.044403 94.016598)">Kit (~$59/mo + ~3% Stripe)</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p8a1c85bed2">
+   <rect x="67.321563" y="37.637031" width="617.284063" height="353.167656"/>
+  </clipPath>
+ </defs>
+</svg>
